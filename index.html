@@ -1,94 +1,113 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Фиолетовая открытка 💜</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фіолетова листівка 💜</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Мягкий динамический фон -->
-  <div class="background">
-    <span class="orb orb1"></span>
-    <span class="orb orb2"></span>
-    <span class="orb orb3"></span>
-    <div class="stars"></div>
-  </div>
-
-  <main class="page">
-
-    <!-- =========================
-         ОТКРЫТКА
-         ТЕКСТ МЕНЯЙ ЗДЕСЬ
-         ========================= -->
-    <section class="card-scene">
-
-      <!-- Крылья -->
-     <div class="wings" aria-hidden="true">
-
-    <!-- ЛЕВОЕ КРЫЛО — меняй left-wing.png на название своего файла -->
-    <div class="wing wing-left">
-        <img src="assets/left-wing.png" alt="">
+    <!-- ДИНАМІЧНИЙ ФОН -->
+    <div class="background">
+        <span class="orb orb1"></span>
+        <span class="orb orb2"></span>
+        <span class="orb orb3"></span>
+        <div class="stars"></div>
     </div>
 
-    <!-- ПРАВОЕ КРЫЛО — меняй right-wing.png на название своего файла -->
-    <div class="wing wing-right">
-        <img src="assets/right-wing.png" alt="">
-    </div>
 
-</div>
+    <main class="page">
 
-      <article class="card">
-        <div class="card-glow"></div>
+        <!-- =========================
+             ЛИСТІВКА
+             ========================= -->
 
-        <div class="card-content">
-          <div class="small-title">для особенного человека</div>
+        <section class="card-scene">
 
-          <!-- ✨ ВОТ ЗДЕСЬ МЕНЯЙ ТЕКСТ ✨ -->
-          <h1>С днём рождения! 💜</h1>
+            <!-- КРИЛА -->
+            <div class="wings" aria-hidden="true">
 
-          <!-- ✨ И ЗДЕСЬ МОЖНО МЕНЯТЬ ТЕКСТ ✨ -->
-          <p>
-            Пусть в твоей жизни будет как можно больше
-            красивых моментов, улыбок и маленьких чудес.
-          </p>
+                <!-- ЛІВЕ КРИЛО -->
+                <div class="wing wing-left">
+                    <img src="assets/left-wing.png" alt="">
+                </div>
 
-          <div class="heart">♥</div>
+                <!-- ПРАВЕ КРИЛО -->
+                <div class="wing wing-right">
+                    <img src="assets/right-wing.png" alt="">
+                </div>
 
-          <!-- ✨ ПОДПИСЬ МОЖНО ПОМЕНЯТЬ ЗДЕСЬ ✨ -->
-          <div class="signature">от меня — тебе</div>
-        </div>
-      </article>
-    </section>
+            </div>
 
-    <!-- =========================
-         ПЕСЕНКА
-         ========================= -->
-    <section class="music">
-      <div class="music-title">♫ маленькая песенка</div>
 
-      <!--
-        ВСТАВЬ ПЕСНЮ В:
-        assets/song.mp3
+            <!-- САМА ЛИСТІВКА -->
+            <article class="card">
 
-        Название файла должно быть именно song.mp3
-        или поменяй src ниже.
-      -->
-      <audio id="song" src="assets/song.mp3" preload="metadata"></audio>
+                <div class="card-content">
 
-      <button class="music-button" id="musicButton">
-        <span id="musicIcon">▶</span>
-        <span id="musicText">включить музыку</span>
-      </button>
+                    <div class="small-title">
+                        for special one
+                    </div>
 
-      <div class="progress">
-        <div class="progress-fill" id="progressFill"></div>
-      </div>
-    </section>
 
-  </main>
+                    <!-- ✨ ЗАГОЛОВОК МОЖНА ЗМІНИТИ ТУТ ✨ -->
 
-  <script src="script.js"></script>
+                    <h1>
+                        Happy bd! 💜
+                    </h1>
+
+
+                    <!-- ✨ ТЕКСТ МОЖНА ЗМІНИТИ ТУТ ✨ -->
+
+                    <p class="poem">
+Ти така чудова, мила і задорна,
+Тобі море — ніби домашня ванна.
+На будь-що ти знайдеш відповідне слово,
+Я захоплююсь твоєю мовою,
+А ще твоєю красою і тайною.
+
+Одеса в порівнянні з тобою —
+Як сонце в порівнянні з луною.
+Ти яскравіша, тепліша, ніби те море,
+Хочеться залишитися в тобі надовго,
+Хоч мурахи вже пробігають по шкірі.
+
+Ти тепла, як літо,
+гарна, ніби Афродіта.
+Ніколи про це не забувай,
+Бо ті думки твої —
+брехливі, злі,
+Та зовсім не красиві.
+
+Любов'ю я ділюсь з тобою,
+Нехай твоя зима
+завжди буде весною!
+                    </p>
+
+
+                    <div class="heart">
+                        ♥
+                    </div>
+
+
+                    <!-- ✨ ПІДПИС МОЖНА ЗМІНИТИ ТУТ ✨ -->
+
+                    <div class="signature">
+                        з любов'ю від Вероніки
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
