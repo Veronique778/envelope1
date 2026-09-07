@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фиолетовая открытка 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Мягкий динамический фон -->
+  <div class="background">
+    <span class="orb orb1"></span>
+    <span class="orb orb2"></span>
+    <span class="orb orb3"></span>
+    <div class="stars"></div>
+  </div>
+
+  <main class="page">
+
+    <!-- =========================
+         ОТКРЫТКА
+         ТЕКСТ МЕНЯЙ ЗДЕСЬ
+         ========================= -->
+    <section class="card-scene">
+
+      <!-- Крылья -->
+      <div class="wings" aria-hidden="true">
+        <!--
+          ВСТАВЬ КАРТИНКУ КРЫЛЬЕВ СЮДА:
+          assets/wings.png
+
+          Если файл называется иначе — поменяй src ниже.
+          Картинка желательно PNG с прозрачным фоном,
+          где оба крыла находятся рядом.
+        -->
+        <div class="wing wing-left">
+          <img src="assets/wings.png" alt="">
+        </div>
+
+        <div class="wing wing-right">
+          <img src="assets/wings.png" alt="">
+        </div>
+      </div>
+
+      <article class="card">
+        <div class="card-glow"></div>
+
+        <div class="card-content">
+          <div class="small-title">для особенного человека</div>
+
+          <!-- ✨ ВОТ ЗДЕСЬ МЕНЯЙ ТЕКСТ ✨ -->
+          <h1>С днём рождения! 💜</h1>
+
+          <!-- ✨ И ЗДЕСЬ МОЖНО МЕНЯТЬ ТЕКСТ ✨ -->
+          <p>
+            Пусть в твоей жизни будет как можно больше
+            красивых моментов, улыбок и маленьких чудес.
+          </p>
+
+          <div class="heart">♥</div>
+
+          <!-- ✨ ПОДПИСЬ МОЖНО ПОМЕНЯТЬ ЗДЕСЬ ✨ -->
+          <div class="signature">от меня — тебе</div>
+        </div>
+      </article>
+    </section>
+
+    <!-- =========================
+         ПЕСЕНКА
+         ========================= -->
+    <section class="music">
+      <div class="music-title">♫ маленькая песенка</div>
+
+      <!--
+        ВСТАВЬ ПЕСНЮ В:
+        assets/song.mp3
+
+        Название файла должно быть именно song.mp3
+        или поменяй src ниже.
+      -->
+      <audio id="song" src="assets/song.mp3" preload="metadata"></audio>
+
+      <button class="music-button" id="musicButton">
+        <span id="musicIcon">▶</span>
+        <span id="musicText">включить музыку</span>
+      </button>
+
+      <div class="progress">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
